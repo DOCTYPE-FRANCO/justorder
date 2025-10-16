@@ -12,7 +12,7 @@ function Navbar(){
             </div>
 
             <div onClick={()=> setNav(!nav)} className="md:hidden ">
-                {nav ? <XIcon /> : <MenuIcon /> }
+                {nav ? <XIcon size={33} /> : <MenuIcon size={33}/> }
             </div>
 
             {nav && (
