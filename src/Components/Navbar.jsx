@@ -16,7 +16,7 @@ function Navbar(){
             </div>
 
             {nav && (
-                <div className="md:hidden flex flex-col gap-7 justify-center items-center fixed w-[150px] top-16 right-0.5 py-4 bg-green-500/95 backdrop-blur-sm transition-all duration-500">
+                <div className="md:hidden flex flex-col gap-7 justify-center items-center fixed w-[150px] top-16 right-0.5 py-4 bg-green-500/95 backdrop-blur-sm transition-all duration-500 rounded-2xl">
                     <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Home</p>
                     <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Orders</p>
                     <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Profile</p>
