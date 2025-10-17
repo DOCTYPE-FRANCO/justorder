@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom"
 import Homepage from "./Components/Homepage"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
+import Mealsdelight from "./Components/Mealsdelight"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <div className="relative z-10">
           <Routes>
             <Route path="/" element={<Homepage />} />
+            <Route path="/mealsd" element={<Mealsdelight />} />
           </Routes>
         </div>
         <Footer />
