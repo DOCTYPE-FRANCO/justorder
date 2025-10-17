@@ -1,6 +1,7 @@
 import React from "react";
 import Jollof from "../assets/jollofrice.jpg"
 import FriedRice from "../assets/friedrice.jpg"
+import Sharwama from "../assets/sharwarma.jpg"
 
 function Mealsdelight(){
 
@@ -54,7 +55,7 @@ function Mealsdelight(){
         <div className="mt-32">
             <p className="text-4xl font-bold flex justify-center items-center">Meals Delight</p>
 
-            <p className="text-3xl font-thin pl-32">Menu</p> 
+            <p className="text-3xl mt-7 mb-5 pl-32"><span className="text-7xl font-bold text-green-600">.</span> Menu</p> 
 
             <div className="grid md:grid-cols-4 gap-4">
                 {menu.map((item) => (
@@ -64,7 +65,7 @@ function Mealsdelight(){
                         </div>
                         <p className="font-bold text-2xl">{item.name}</p>
                         <p className="text-gray-700 font-thin h-[70px]">{item.description}</p>
-                        <p className="font-bold text-green-600">₦{item.price}</p>
+                        <p className="font-bold text-2xl mb-2 text-green-600">₦{item.price}</p>
                         <button className="flex justify-self-center justify-center items-center font-bold bg-green-600 w-[250px] h-[35px] text-white">Add to Cart</button>
                     </div>
                 ))}
