@@ -1,8 +1,10 @@
 import React from "react";
 import Jollof from "../assets/jollofrice.jpg"
 import FriedRice from "../assets/friedrice.jpg"
-import Sharwama from "../assets/sharwarma.jpg"
-
+import Sharwama from "../assets/sharwama.jpg"
+import Plantain from "../assets/plantain.webp"
+import Chicken  from "../assets/Chicken.jpg"
+import Bread from "../assets/bread.jpg"
 function Mealsdelight(){
 
     const menu = [
@@ -17,7 +19,7 @@ function Mealsdelight(){
         {
             id: 2,
             name: "Fried Rice",
-            description: "Juicy beef patty with melted cheese, lettuce, tomato, and special sauce on a toasted bun.",
+            description: "Per Portion",
             image: FriedRice,
             price: 4200,
         },
@@ -25,28 +27,28 @@ function Mealsdelight(){
             id: 3,
             name: "Shawarma Wrap",
             description: "Lebanese-style chicken shawarma with creamy garlic sauce and crispy veggies in a soft pita wrap.",
-            image: "https://example.com/images/shawarma.jpg",
-            price: 2800,
-        },
-        {
-            id: 4,
-            name: "Pepper Soup",
-            description: "Hot and spicy Nigerian soup made with assorted meat and aromatic herbs.",
-            image: "https://example.com/images/pepper-soup.jpg",
+            image: Sharwama,
             price: 2500,
         },
         {
+            id: 4,
+            name: "Plantain",
+            description: "Three (3) Pieces",
+            image: Plantain,
+            price: 200,
+        },
+        {
             id: 5,
-            name: "Suya Platter",
+            name: "Chicken",
             description: "Grilled spicy beef skewers served with onions, tomatoes, and yaji pepper mix.",
-            image: "https://example.com/images/suya.jpg",
-            price: 3000,
+            image: Chicken,
+            price: 2000,
         },
         {
             id: 6,
             name: "Bread",
-            description: "Classic Nigerian dish with smooth pounded yam and thick melon seed soup.",
-            image: "https://example.com/images/pounded-yam.jpg",
+            description: "Meals delight Bread",
+            image: Bread,
             price: 400,
         },
     ];
