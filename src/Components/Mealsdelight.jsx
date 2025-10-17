@@ -1,5 +1,6 @@
 import React from "react";
-import Jollof from "../assets/"
+import Jollof from "../assets/jollofrice.jpg"
+import FriedRice from "../assets/friedrice.jpg"
 
 function Mealsdelight(){
 
@@ -7,8 +8,8 @@ function Mealsdelight(){
         {
             id: 1,
             name: "Jollof Rice & Chicken",
-            description: "Spicy West African jollof rice served with grilled chicken and fried plantain.",
-            image: "",
+            description: "Per Portion",
+            image: Jollof,
             price: 3500,
         },
 
@@ -16,7 +17,7 @@ function Mealsdelight(){
             id: 2,
             name: "Fried Rice",
             description: "Juicy beef patty with melted cheese, lettuce, tomato, and special sauce on a toasted bun.",
-            image: "https://example.com/images/beef-burger.jpg",
+            image: FriedRice,
             price: 4200,
         },
         {
@@ -42,10 +43,10 @@ function Mealsdelight(){
         },
         {
             id: 6,
-            name: "Pounded Yam & Egusi Soup",
+            name: "Bread",
             description: "Classic Nigerian dish with smooth pounded yam and thick melon seed soup.",
             image: "https://example.com/images/pounded-yam.jpg",
-            price: 4000,
+            price: 400,
         },
     ];
 
@@ -55,10 +56,16 @@ function Mealsdelight(){
 
             <p className="text-3xl font-thin pl-32">Menu</p> 
 
-            <div>
+            <div className="grid md:grid-cols-4 gap-4">
                 {menu.map((item) => (
-                    <div key={item.id} className="w-[300px] h-[500px] ">
-
+                    <div key={item.id} className="flex flex-col ml-4 w-[280px] h-[400px] rounded-2xl gap-3 bg-white shadow-2xl p-3">
+                        <div className="flex justify-self-center items-center w-[90%] h-[30%] rounded-2xl overflow-hidden">
+                            <img src={item.image} className="hover:scale-110 transition-all duration-500"  />
+                        </div>
+                        <p className="font-bold text-2xl">{item.name}</p>
+                        <p className="text-gray-700 font-thin h-[70px]">{item.description}</p>
+                        <p className="font-bold text-green-600">₦{item.price}</p>
+                        <button className="flex justify-self-center justify-center items-center font-bold bg-green-600 w-[250px] h-[35px] text-white">Add to Cart</button>
                     </div>
                 ))}
             </div>
