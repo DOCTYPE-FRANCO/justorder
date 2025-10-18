@@ -47,14 +47,14 @@ function Homepage(){
 
 
     return(
-        <div className="">
+        <div className="z-30">
             <Herosection />
 
             <div className="flex justify-center mt-24 text-4xl text-green-700 font-bold" >Featured Resturants</div>
 
-            <div className="flex flex-col md:flex-row gap-10 justify-center items-center mt-10">
+            <div className="flex flex-col md:flex-row gap-10 justify-center items-center mt-10 ">
                 {featuredRestaurants.map((featured) => (
-                    <div key={featured.id} className="flex flex-col mb-4 justify-center items-center  w-[270px] h-[350px] md:w-[270px] md:h-[30🇳🇬0px] rounded-md shadow-2xl shadow-gray-500">
+                    <div key={featured.id} className="flex flex-col mb-4 bg-white justify-center items-center  w-[270px] h-[350px] md:w-[270px] md:h-[30🇳🇬0px] rounded-md shadow-2xl shadow-gray-500">
                         {featured.available ? <p className="flex justify-center items-center md:p-0 p-3 ml-32 mb-2 md:w-[100px]  md:h-[30px] font-bold rounded-full bg-green-500 text-white ">Available</p> : <p className="flex justify-center items-center ml-32 mb-2 md:w-[100px] md:h-[30px] font-bold rounded-full bg-red-600 text-white md:p-0 p-3">Unavailable</p>}
                         <div className="w-[55%] h-[62%] rounded-xl overflow-hidden">
                             <img src={featured.image}/>
