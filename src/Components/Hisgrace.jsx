@@ -59,7 +59,7 @@ function HisGrace(){
 
             <p className="text-3xl mt-7 mb-5 pl-32"><span className="text-7xl font-bold text-green-600">.</span> Menu</p> 
 
-            <div className="grid md:grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-4 grid-cols-1 justify-self-center gap-4">
                 {menu.map((item) => (
                     <div key={item.id} className="flex flex-col ml-4 w-[280px] h-[400px] rounded-2xl gap-3 bg-white shadow-2xl p-3">
                         <div className="flex justify-self-center items-center w-[90%] h-[30%] rounded-2xl overflow-hidden">
@@ -75,4 +75,4 @@ function HisGrace(){
         </div>
     );
 }
-export default Hisgrace;
+export default HisGrace;
