@@ -50,7 +50,7 @@ function Homepage(){
         <div className="">
             <Herosection />
 
-            <div className="flex justify-center mt-24 text-4xl text-green-700 font-bold" id="CampusCaf">Featured Resturants</div>
+            <div className="flex justify-center mt-24 text-4xl text-green-700 font-bold" >Featured Resturants</div>
 
             <div className="flex flex-col md:flex-row gap-10 justify-center items-center mt-10">
                 {featuredRestaurants.map((featured) => (
