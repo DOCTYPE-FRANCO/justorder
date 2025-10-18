@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Hamburger , MenuIcon, XIcon} from "lucide-react";
 function Navbar(){
-    const [nav , setNav] = useState(true);
+    const [nav , setNav] = useState(false);
     return(
         <div className="">
             <div className="hidden md:flex flex-row gap-10 justify-center items-center pr-10">
