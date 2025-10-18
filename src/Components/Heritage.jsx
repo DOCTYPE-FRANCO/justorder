@@ -57,11 +57,11 @@ function Heritage(){
         <div className="mt-32">
             <p className="text-4xl font-bold flex justify-center items-center">Heritage Kitchen</p>
 
-            <p className="text-3xl mt-7 mb-5 pl-32"><span className="text-7xl font-bold text-green-600">.</span> Menu</p> 
+            <p className="text-3xl mt-7 mb-5 text-center"><span className="text-7xl font-bold text-green-600">.</span> Menu</p>
 
-            <div className="grid md:grid-cols-4 grid-cols-1 justify-self-center items-center justify-center gap-4">
+            <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 grid-cols-1 justify-items-center items-center gap-4">
                 {menu.map((item) => (
-                    <div key={item.id} className="flex flex-col w-[280px] h-[400px] rounded-2xl gap-3 bg-white shadow-2xl p-3">
+                    <div key={item.id} className="flex flex-col w-[280px] h-[400px] rounded-2xl gap-3 bg-white shadow-2xl p-3 mx-auto">
                         <div className="flex justify-self-center items-center w-[90%] h-[30%] rounded-2xl overflow-hidden">
                             <img src={item.image} className="hover:scale-110 transition-all duration-500"  />
                         </div>
