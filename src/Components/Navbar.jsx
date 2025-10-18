@@ -24,6 +24,7 @@ function Navbar(){
                         <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Home</p>
                     </Link>
                     <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Orders</p>
+                    <a href="#CampusCaf" className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Campus Cafs</a>
                     <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Profile</p>
                     <p className="text-white font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Help</p>
                 </div>
