@@ -18,7 +18,7 @@ function Homepage(){
             image: Dominos,
             name: "Domino's Pizza",
             motto: "Deliciously fast, always fresh 🍕",
-            available: true
+            available: false
         },
 
         {
@@ -26,7 +26,7 @@ function Homepage(){
             image: ChickenR,
             name: "Chicken Republic",
             motto: "Taste the goodness of Nigeria 🇳🇬",
-            available: true
+            available: false
         },
         {
             id: 3,
@@ -40,7 +40,7 @@ function Homepage(){
             image: MegaChicken,
             name: "Mega Chicken",
             motto: "Wrap your hunger away 🌯",
-            available: true
+            available: false
         },
         
     ];
@@ -54,12 +54,13 @@ function Homepage(){
 
             <div className="flex flex-col md:flex-row gap-10 justify-center items-center mt-10">
                 {featuredRestaurants.map((featured) => (
-                    <div key={featured.id} className="flex flex-col justify-center items-center w-[270px] h-[350px] md:w-[200px] md:h-[280px] rounded-sm shadow-2xl shadow-gray-500">
-                        <p></p>
+                    <div key={featured.id} className="flex flex-col justify-center items-center w-[270px] h-[350px] md:w-[270px] md:h-[30🇳🇬0px] rounded-md shadow-2xl shadow-gray-500">
+                        {featured.available ? <p className="flex justify-center items-center ml-32 mb-2 md:w-[100px]  md:h-[30px] font-bold rounded-full bg-green-500 text-white">Available</p> : <p className="flex justify-center items-center ml-32 mb-2 md:w-[100px] md:h-[30px] font-bold rounded-full bg-red-600 text-white">Unavailable</p>}
                         <div className="w-[55%] h-[62%] rounded-xl overflow-hidden">
                             <img src={featured.image}/>
                         </div>
                         <p className="font-bold text-2xl">{featured.name}</p>
+                        <p className="font-thin text-sm text-gray-700">{featured.motto}</p>
                     </div>
                 ))}
             </div>
