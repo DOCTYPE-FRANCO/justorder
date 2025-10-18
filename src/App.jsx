@@ -4,6 +4,8 @@ import Homepage from "./Components/Homepage"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
 import Mealsdelight from "./Components/Mealsdelight"
+import Hisgrace from "./Components/Hisgrace"
+import Heritage from "./Components/Heritage"
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/mealsd" element={<Mealsdelight />} />
+            <Route path="/heritage" element={<Heritage />} />
+            <Route path="/hisgrace" element={<Hisgrace />} />
           </Routes>
         </div>
         <Footer />
