@@ -26,7 +26,7 @@ function App() {
       {/* Your Content/Components */}
 
       <div className="z-10">
-        <Header className="flex justify-center items-center" />
+        <Header />
         <div className="relative z-10">
           <Routes>
             <Route path="/" element={<Homepage />} />
