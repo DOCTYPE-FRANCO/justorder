@@ -23,21 +23,25 @@ function Homepage(){
                     </div>
                 </Link>
 
-                <div className="flex flex-col gap-2 bg-white justify-center items-center w-[270px] h-[350px] md:w-[200px] md:h-[280px] rounded-sm shadow-2xl shadow-gray-500">
-                    <div className="w-[65%] h-[62%] rounded-xl overflow-hidden">
-                        <img src={Heritage} className="fit hover:scale-110 transition-all duration-300" />
+                <Link to="/heritage">
+                    <div className="flex flex-col gap-2 bg-white justify-center items-center w-[270px] h-[350px] md:w-[200px] md:h-[280px] rounded-sm shadow-2xl shadow-gray-500">
+                        <div className="w-[65%] h-[62%] rounded-xl overflow-hidden">
+                            <img src={Heritage} className="fit hover:scale-110 transition-all duration-300" />
+                        </div>
+                        <p className="text-xl font-bold">Heritage</p>
+                        <button className="bg-green-600 w-[150px] h-[30px] md:w-[100px] md:h-[25px] rounded-sm text-white mt-2 hover:scale-105 active:bg-gray-800 transition-all duration-500">View Menu</button>
                     </div>
-                    <p className="text-xl font-bold">Heritage</p>
-                    <button className="bg-green-600 w-[150px] h-[30px] md:w-[100px] md:h-[25px] rounded-sm text-white mt-2 hover:scale-105 active:bg-gray-800 transition-all duration-500">View Menu</button>
-                </div>
+                </Link>
 
-                <div className="flex flex-col gap-2 bg-white justify-center items-center w-[270px] h-[350px] md:w-[200px] md:h-[280px] rounded-sm shadow-2xl shadow-gray-500">
-                    <div className="w-[65%] h-[62%] rounded-xl overflow-hidden">
-                        <img src={HisGrace} className="fit hover:scale-110 transition-all duration-300" />
-                    </div>
-                    <p className="text-xl font-bold">His Grace</p>
-                    <button className="bg-green-600 w-[150px] h-[30px] md:w-[100px] md:h-[25px] rounded-sm text-white mt-2 hover:scale-105 active:bg-gray-800 transition-all duration-500">View Menu</button>
-                </div>    
+                <Link to="/hisgrace">
+                    <div className="flex flex-col gap-2 bg-white justify-center items-center w-[270px] h-[350px] md:w-[200px] md:h-[280px] rounded-sm shadow-2xl shadow-gray-500">
+                        <div className="w-[65%] h-[62%] rounded-xl overflow-hidden">
+                            <img src={HisGrace} className="fit hover:scale-110 transition-all duration-300" />
+                        </div>
+                        <p className="text-xl font-bold">His Grace</p>
+                        <button className="bg-green-600 w-[150px] h-[30px] md:w-[100px] md:h-[25px] rounded-sm text-white mt-2 hover:scale-105 active:bg-gray-800 transition-all duration-500">View Menu</button>
+                    </div>    
+                </Link>
             </div>
         </div>
     );
