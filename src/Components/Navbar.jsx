@@ -5,7 +5,7 @@ function Navbar(){
     const [nav , setNav] = useState(false);
     return(
         <div className="">
-            <div className="hidden md:flex flex-row gap-10 justify-center items-center pr-10">
+            <div className="hidden md:flex flex-row gap-10 justify-center items-center md:pr-10">
                 <Link to="/">
                     <p className="font-bold cursor-pointer hover:text-gray-600 active:text-gray-800">Home</p>
                 </Link>
