@@ -61,7 +61,7 @@ function HisGrace(){
 
             <div className="grid md:grid-cols-4 grid-cols-1 justify-self-center items-center justify-center gap-4">
                 {menu.map((item) => (
-                    <div key={item.id} className="flex flex-col ml-4 w-[280px] h-[400px] rounded-2xl gap-3 bg-white shadow-2xl p-3">
+                    <div key={item.id} className="flex flex-col w-[280px] h-[400px] rounded-2xl gap-3 bg-white shadow-2xl p-3">
                         <div className="flex justify-self-center items-center w-[90%] h-[30%] rounded-2xl overflow-hidden">
                             <img src={item.image} className="hover:scale-110 transition-all duration-500"  />
                         </div>
